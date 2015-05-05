@@ -1,32 +1,137 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="StarterApp">
+<html lang="en" ng-app="AppCtrl">
 <head>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
-  <link rel="stylesheet" href="my-style.css"/>
   <meta name="viewport" content="initial-scale=1"/>
 </head>
-<body layout="column" ng-controller="AppCtrl">
-<md-toolbar layout="row">
-  <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
-    <span class="visually-hidden">Menu</span>
-  </button>
-  <h1 class="md-toolbar-tools" layout-align-gt-sm="center">Andr&eacute;s Dom&iacute;nguez</h1>
-</md-toolbar>
-<div layout="row" flex>
-  <md-sidenav layout="column"
-      class="md-sidenav-left md-whiteframe-z2"
-      md-component-id="left"
-      md-is-locked-open="$mdMedia('gt-sm')">
-    sdfdfsfds
-  </md-sidenav>
-  <div layout="column" flex id="content">
-    <md-content layout="column" flex class="md-padding">
-      dslkafj
+<body layout="column">
+<div layout="column" style="padding-bottom: 15px;">
+  <md-toolbar class="md-warn">
+    <div class="md-toolbar-tools">
+      <h2 class="md-warn">Andres Dominguez</h2>
+    </div>
+  </md-toolbar>
+  <md-content layout-padding style="padding: 24px;">
+    <p>
+      I am a software engineer at Google New York. In my free time I enjoy
+      building tools, drinking coffee, and riding my bicycle.
+    </p>
 
+    <div>
+      <h2>Contact</h2>
 
-    </md-content>
-  </div>
+      <md-button class="md-primary"
+          href="http://www.linkedin.com/in/andresdom">Linkedin
+      </md-button>
+      <md-button class="md-primary"
+          href="https://twitter.com/#!/andresdom">Twitter
+      </md-button>
+      <md-button class="md-primary"
+          href="https://github.com/andresdominguez">Github
+      </md-button>
+    </div>
+    
+    <div>
+      <h2>Recent projects</h2>
+      <p>
+        Here is a short list of the projects I have have been working on
+        recently.
+      </p>
+    </div>
+
+    <div>
+      <h3>JS Toolbox</h3>
+
+      <p>
+        An Intellij / Webstorm plugin that provides several tools for
+        javascript development.
+      </p>
+      <div>
+        <md-button class="md-primary"
+            href="http://andresdominguez.github.io/jsToolbox/">
+          See documentation
+        </md-button>
+        <md-button class="md-primary"
+            href="https://github.com/andresdominguez/jsToolbox">
+          View on Github
+        </md-button>
+      </div>
+    </div>
+
+    <div>
+      <h3>Yeoman generator for protractor</h3>
+      <p>
+        A <a href="http://yeoman.io/">Yeoman</a> code generator for
+        <a href="https://github.com/angular/protractor">Protractor</a>. Protractor is an end
+        to end test framework for Angular applications built on top of webdriverJS.
+      </p>
+
+      <div>
+        <md-button class="md-primary"
+            href="https://github.com/andresdominguez/generator-protractor">
+          View on Github
+        </md-button>
+      </div>
+    </div>
+
+    <div>
+      <h3>DDescriber for jasmine</h3>
+      <p>
+        An Intellij / Webstorm plugin to manipulate jasmine / mocha unit tests.
+      </p>
+      <div>
+        <md-button class="md-primary"
+            href="http://andresdominguez.github.io/ddescriber/">
+          See the documentation
+        </md-button>
+        <md-button class="md-primary"
+            href="https://github.com/andresdominguez/ddescriber">
+          View on Github
+        </md-button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Presentations / Meetups</h2>
+    </div>
+
+    <div>
+      <h3>AngularJS NYC meetup (Dec 2013)</h3>
+      <p>
+        I gave an introduction to Protractor. The presentation included some
+        tips and best practices.
+      </p>
+      <div>
+        <md-button class="md-primary"
+            href="https://docs.google.com/presentation/d/17smHJYFXB_hoFEUIKBU1zjHCT_iswVQiLFpcCv8ud6E/view#slide=id.p">
+          Slides
+        </md-button>
+        <md-button class="md-primary"
+            href="https://github.com/andresdominguez/protractor-meetup">
+          Code
+        </md-button>
+      </div>
+    </div>
+
+    <div>
+      <h3>AngularJS NYC meetup (May 2013) </h3>
+      <p>
+        I gave a talk about implementing a DSL and adding jasmine matchers to
+        improve your unit tests for an AngularJS project
+      </p>
+      <div>
+        <md-button class="md-primary"
+            href="https://docs.google.com/presentation/d/1FSe8eWcEhsycAZ4PqwvTPQ1wPk-aF1iGvnyo2fe81ic/edit?usp=sharing">
+          Slides
+        </md-button>
+        <md-button class="md-primary"
+            href="https://github.com/andresdominguez/angular-meetup">
+          Code
+        </md-button>
+      </div>
+    </div>
+  </md-content>
 </div>
 <!-- Angular Material Dependencies -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
